@@ -1,1 +1,22 @@
-
+#North
+0 XE** -> N 0
+0 NEXX -> W 1
+0 *X** -> E 3
+0 NEWX -> S 2
+#West
+1 N*X* -> W 1
+1 NXWX -> S 2
+1 XX** -> N 0
+1 NXWS -> E 3
+#South
+2 **WX -> S 2
+2 X*XS -> W 1
+2 *XWS -> E 3
+2 *EXX -> W 1
+2 XEWS -> N 0
+2 XXXX -> W 1
+#East
+3 *X*S -> E 3
+3 **XX -> S 2
+3 XEXS -> N 0
+3 NE*S -> W 1
