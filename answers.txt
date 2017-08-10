@@ -1,1 +1,31 @@
+1.    Describe the following rules in English:
+
+     0 N*x* --> W 0
+     1 x**x --> N 2
+
+Starting at state 0, if there's a North wall and a free space on Picobot's West side, regardless of what's east and south of the picobot, it will move West and the state will remain the same.
+
+Starting at state 1, if there's a free space North and South, regardless of what's East or West, the Picobot will move North and set it's state to 2.
+
+2.    What is the difference between the “*” and the “x” in the description of Picobot’s surroundings?
+
+"*"'s represent either a wall or free space, allowing the rules to disregard the type of space the space is. The x, on the other hand, represents a space that doesn't have a wall, and is not blocked. 
+
+3.    Write a Picobot rule that would cause Picobot to crash into a wall (Picobot will report an error if you try this)
+
+0 **** -> E 0
+
+4.    In the Picobot simulator, what will happen if we replace the “X” in the fourth (i.e., last) starting rule with a W. First try to predict, and then run the simulation to see what happens.
+
+By replacing the X with a W, the Picobot was able to move an aditional space West before movign back up, allowing it to cover more ground in a shorter amount of time.
+
+5.    In the Picobot simulator, modify the starting rules so that Picobot moves from East to West instead of from North to South.
+# state 0 with nothing W go one step W
+0 **X* -> W 0   
+
+0 **W* -> N 1 
+
+1 *x** -> E 1   
+
+1 *E** -> X 0 
 
